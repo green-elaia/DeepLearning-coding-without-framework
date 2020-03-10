@@ -94,7 +94,7 @@ def get_test_data():
 
 def run_train(x, y):
     output, aux_nn = forward_neuralnet(x)
-    loss, aux_pp = forwark_postproc(output, y)
+    loss, aux_pp = forward_postproc(output, y)
     accuracy = eval_accuracy(output, y)
 
     G_loss =  1.0
@@ -126,4 +126,28 @@ def backprop_neuralnet(G_output, x):
     weight -= LEARNING_RATE * G_w
     bias -= LEARNING_RATE * G_b
 
-    
+
+def forward_postproc(output, y):
+    diff = output - y
+    square = np.square(diff)
+    loss = np.mean(square)
+    return loss, diff
+
+
+def backprop_postproc(G_loss, diff):
+    shape = diff.shape
+
+    g_loss_square = np.ones(shape) / np.prod(shape)
+    g_square_diff = 2 * diff
+    g_diff_output = 1
+
+    G_square = g_loss_square * G_loss
+    G_diff = g_square_diff * G_square
+    G_output = g_diff_output * G_diff
+
+    return G_output
+
+
+def eval_accuracy(output, y):
+    mdiff = np.mean(np.abs((output - y) / y))
+    return 1 - mdiff
