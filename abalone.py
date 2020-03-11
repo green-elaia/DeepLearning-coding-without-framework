@@ -151,3 +151,18 @@ def backprop_postproc(G_loss, diff):
 def eval_accuracy(output, y):
     mdiff = np.mean(np.abs((output - y) / y))
     return 1 - mdiff
+
+
+if __name__ == "__main__":
+    """
+    * 출력결과 loss는 지속적으로 줄어드는 반면 accuracy는 그대로인 것을 볼 때 
+      전복의 외형으로 고리수를 예측한다는 문제 자체가 한계로 작용했을 수 있다.
+    * 학습률과 배치 사이즈는 학습에 큰 영향을 주는 하이퍼파라미터이다.
+      그래서 여러 경우로 학습해서 비교해보는 것이 필요하다.
+    """
+    print("Epoch: 10, batch size: 10, Learning rate: {}".format(LEARNING_RATE))
+    abalone_exec()
+    print("="*100)
+    LEARNING_RATE = 0.01
+    print("Epoch: 40, batch size: 40, Learning rate: {}".format(LEARNING_RATE))
+    abalone_exec(40, 40, 4)
