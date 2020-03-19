@@ -216,29 +216,3 @@ if __name__ == "__main__":
     확인할 수 있다.
     """
     pulsar_exec(epoch_count=20, mb_size=20,adjust_ratio=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
