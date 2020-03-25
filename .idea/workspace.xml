@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eab7ef7-74b3-445f-9ef8-ad2ce8ecb944" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pulsar.py" beforeDir="false" afterPath="$PROJECT_DIR$/pulsar.py" afterDir="false" />
-    </list>
+    <list default="true" id="4eab7ef7-74b3-445f-9ef8-ad2ce8ecb944" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/pulsar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1505">
-              <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
+              <caret line="218" selection-start-line="218" selection-end-line="218" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -73,25 +71,12 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="alzza_deeplearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alzza_deeplearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tf2 practice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,11 +167,12 @@
       <workItem from="1584509349671" duration="1297000" />
       <workItem from="1584600976749" duration="15570000" />
       <workItem from="1584627437592" duration="22000" />
+      <workItem from="1585136279518" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39931000" />
+    <option name="totallyTimeSpent" value="40005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1096" height="1896" extended-state="6" />
@@ -236,7 +222,7 @@
     <entry file="file://$PROJECT_DIR$/pulsar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1505">
-          <caret line="218" lean-forward="true" selection-start-line="218" selection-end-line="218" />
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
